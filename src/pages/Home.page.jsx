@@ -52,7 +52,7 @@ const Homepage = () => {
       <div className="container mx-auto px-4 md:px-12 my-8">
         <PosterSlider
           title="Top Rated Movies"
-          subtitle="List  of Top Rated movies"
+          subtitle="List of Top Rated movies"
           posters={RecommendedMovies}
           isDark={false}
         />
@@ -65,7 +65,7 @@ const Homepage = () => {
         <EntertainmentCardSlider />
       </div>
 
-      <div className="bg-premier-800 py-12">
+      <div className="bg-gray-900 py-12">
         <div className="container mx-auto px-4 md:px-12 my-8 flex-col gap-3">
           <div className="hidden md:flex">
             {/* <img
@@ -86,7 +86,7 @@ const Homepage = () => {
       <div className="container mx-auto px-4 md:px-12 my-8">
         <PosterSlider
           title="Popular Movies"
-          subtitle="popular movies in ticket booking application"
+          subtitle="popular movies in Movie Mania"
           posters={onlineStreamEvents}
           isDark={false}
         />
