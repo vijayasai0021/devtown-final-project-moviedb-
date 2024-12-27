@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import pages
 import Homepage from './pages/Home.page';
 import Moviepage from './pages/Movie.page.jsx';
-import Playspage from './pages/Plays.page.jsx';
+import Playpage from './pages/Play.page.jsx';
 
 axios.defaults.baseURL="https://api.themoviedb.org/3";
 axios.defaults.params = {};
@@ -23,7 +23,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Homepage/>} />
       <Route path="/movie/:id" element={<Moviepage />} />
-      <Route path="/plays" element={<Playspage />} />
+      <Route path="/plays" element={<Playpage />} />
     </Routes>
   );
 }
