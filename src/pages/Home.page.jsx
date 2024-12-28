@@ -69,9 +69,9 @@ const Homepage = () => {
         <div className="container mx-auto px-4 md:px-12 my-8 flex-col gap-3">
           <div className="hidden md:flex">
             {/* <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS82g8mkrlMMiQ17FGj5_VQAQ-P2gHUyXhYIQ&s"
+              src=""
               alt="Rupay"
-              className="w-full h-full"
+              className="w-full h-full "
             /> */}
           </div>
           <PosterSlider
