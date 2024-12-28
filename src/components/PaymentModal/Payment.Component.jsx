@@ -8,7 +8,21 @@ const PaymentModal = ({ setIsOpen, isOpen, price }) => {
   };
 
   const launchRazorPay = () =>{
-    
+        let options = {
+      key: "rzp_test_uiMizEfsAH670Y",
+      amount: price * 100,
+      currency: "INR",
+      name: "Movie Mania",
+      description: "Movie purchase or rent",
+      handler: () => {
+        setIsOpen(false);
+        alert("Payment Succesful");
+      },
+      theme: {color: "#c4242d"},
+    };
+
+    let razorPay = window.Razorpay(options);
+    razorPay.open();
   }
 
   return (
