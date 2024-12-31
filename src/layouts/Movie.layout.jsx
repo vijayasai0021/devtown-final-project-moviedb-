@@ -1,6 +1,7 @@
 import React from "react";
 import MovieNavbar from "../components/navbar/MovieNavbar.Component";
 import MovieProvider from "../components/context/Movie.context";
+import Footer from '../components/Footer.jsx';
 
 const MovieLayoutHoc =
   (Component) =>
@@ -11,7 +12,7 @@ const MovieLayoutHoc =
           <MovieNavbar />
         <Component {...props} />
         </MovieProvider>
-        <div>Footer</div> 
+        <div><Footer/></div>
     </div>;
   };
 

@@ -47,7 +47,7 @@ function Footer() {
         {/* Copyright */}
         <div className="text-center mt-8">
           <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Movie Mania. All rights reserved.
+            &copy; {new Date().getFullYear()} Movie Mania(Vijayasai.Guntreddi). All rights reserved.
           </p>
         </div>
       </div>

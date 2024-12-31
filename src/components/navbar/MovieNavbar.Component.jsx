@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { BiChevronDown, BiMenu, BiSearch, BiShareAlt } from "react-icons/bi";
 import { MovieContext } from "../context/Movie.context";
+import Searchbar from '../Search/Search.Component.jsx';
 
 const NavSm = () => {
   const { movie } = useContext(MovieContext);
@@ -24,15 +25,18 @@ const NavLg = () => {
       <div className="container flex mx-auto px-4 items-center justify-between">
         <div className="flex items-center w-1/2 gap-3">
           <div className="w-10 h-10">
-            <img src="" alt="logo" className="w-full h-full" />
+            <img src="/Image_For_Movie_Website.jpg" alt="logo" className="w-full h-full" />
           </div>
-          <div className="w-full flex items-center gap-3 bg-white px-3 py-1 rounded-md">
-            <BiSearch />
-            <input
+          <div className="w-full flex items-center gap-3   rounded-md">
+            {/* <BiSearch /> */}
+            {/* <input
               type="search"
-              className="w-full bg-transparent border-none focus: outline-none"
-              placeholder="Search for movies, events, plays, sports and activites"
-            />
+              className="w-full bg-transparent border-none focus:outline-none"
+              placeholder="Search for movies, events, plays, sports and activities"
+            /> */}
+            {/* <Searchbar/> */}
+            <h1 className=" text-2xl  font-extrabold text-white font-serif">Movie Page</h1>
+            <h3 className="  text-white font-serif">(Movie Details will be shown here and You can rent or buy movies)</h3>
           </div>
         </div>
         <div className="flex items-center gap-3">
